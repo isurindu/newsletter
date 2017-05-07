@@ -29,7 +29,7 @@ class NewsLetterListener
     public function handle(NewsLetterEvent $event)
     {
         Mail::to('prabash.p@dubaimn.com')
-            ->cc('rifath.a@dubaimn.com')
+            // ->cc('rifath.a@dubaimn.com')
             ->send(new NewsLetterMail);
     }
 }
